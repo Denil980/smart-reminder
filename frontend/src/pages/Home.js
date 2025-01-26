@@ -88,9 +88,9 @@ const Home = () => {
               <span className="ml-2">Notifications</span>
             </button>
             {isDropdownOpen && notifications.length > 0 && (
-              <div className="absolute right-0 mt-2 w-full sm:w-64 bg-white text-gray-900 rounded-lg shadow-lg border border-gray-200">
+              <div className="absolute right-0 mt-2 w-full sm:w-80 bg-white text-gray-900 rounded-lg shadow-lg border border-gray-200">
                 <div className="p-2 font-bold border-b">Notifications</div>
-                <div className="max-h-60 overflow-y-auto">
+                <div className="max-h-96 overflow-y-auto">
                   {notifications.map((notification, index) => (
                     <div key={index} className="p-2 border-b hover:bg-gray-100">
                       {notification.message}
@@ -101,7 +101,7 @@ const Home = () => {
                   to="/notifications" 
                   className="block p-2 text-center text-blue-500 hover:underline"
                 >
-                  View All
+                  
                 </Link>
               </div>
             )}
